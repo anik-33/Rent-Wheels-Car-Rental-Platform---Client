@@ -23,7 +23,7 @@ const Navbar = () => {
     }
     const links = <>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/'> <li>Home</li></NavLink>
-        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/bb'> <li>Browse Cars</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/All-Cars'> <li>Browse Cars</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/fw'> <li>Add Car</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qf'> <li>My Listings</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qwe'> <li className=''>My Bookings</li></NavLink>

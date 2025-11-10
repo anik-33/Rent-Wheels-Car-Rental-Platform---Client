@@ -3,6 +3,7 @@ import MainlayOut from "../layout/MainlayOut";
 import Home from "../Home/Home";
 import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Registration";
+import AllCar from "../Pages/Allcars/AllCar";
 
 
 
@@ -23,6 +24,11 @@ export const router = createBrowserRouter([
       {
         path:"/auth/registration",
         element:<Register></Register>
+      },
+      {
+        path:"/All-Cars",
+        element:<AllCar></AllCar>,
+        loader: () => fetch('http://localhost:3000/allcar')
       },
 
     ]

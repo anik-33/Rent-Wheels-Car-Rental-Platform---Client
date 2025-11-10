@@ -1,0 +1,122 @@
+[
+  {
+    "CarName": "Tesla Model 3",
+    "Description": "A sleek electric sedan offering top-notch performance and eco-friendly driving.",
+    "Category": "Electric",
+    "RentPrice": "$120/day",
+    "Location": "Los Angeles, CA",
+    "HostedImage": "https://i.ibb.co.com/r2C583bg/2024-Tesla-Model-3-EV-1.jpg",
+    "ProviderName": "Elon Rentals",
+    "ProviderEmail": "contact@elonrentals.com",
+    "CreatedAt": "2025-11-10T09:00:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "BMW X5",
+    "Description": "Luxury SUV with powerful engine and advanced safety features.",
+    "Category": "SUV",
+    "RentPrice": "$150/day",
+    "Location": "New York, NY",
+    "HostedImage": "https://i.ibb.co.com/8ngcBqwQ/2025-Honda-Civic-Hybrid-First-Look-Sleeker-Sippier-and.jpg",
+    "ProviderName": "Prime Auto Hub",
+    "ProviderEmail": "info@primeauto.com",
+    "CreatedAt": "2025-11-09T14:20:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Honda Civic",
+    "Description": "Reliable sedan known for its fuel efficiency and comfort.",
+    "Category": "Sedan",
+    "RentPrice": "$65/day",
+    "Location": "Chicago, IL",
+    "HostedImage": " https://i.ibb.co.com/hx5qZ513/Honda-Civic-RS-Prototype-Debuts-In-Tokyo-With-Sharper-Looks-And-A-Manual-Gearbox-Carscoops.jpg",
+    "ProviderName": "CityDrive Rentals",
+    "ProviderEmail": "support@citydrive.com",
+    "CreatedAt": "2025-11-08T10:45:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Toyota RAV4",
+    "Description": "Compact SUV ideal for families and adventure trips.",
+    "Category": "SUV",
+    "RentPrice": "$80/day",
+    "Location": "Dallas, TX",
+    "HostedImage": "https://i.ibb.co.com/5gwWktvh/Toyota-RAV4-2025-Record-28-KMPL-Mileage-in-a-Luxury-SUV-Avatar.jpg",
+    "ProviderName": "AutoEase Rentals",
+    "ProviderEmail": "hello@autoease.com",
+    "CreatedAt": "2025-11-08T18:30:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Audi A8",
+    "Description": "Premium luxury sedan with cutting-edge technology and elegant design.",
+    "Category": "Luxury",
+    "RentPrice": "$200/day",
+    "Location": "Miami, FL",
+    "HostedImage": "https://i.ibb.co.com/xt1wsmzY/Audi-A8.jpg",
+    "ProviderName": "Elite Wheels",
+    "ProviderEmail": "book@elitewheels.com",
+    "CreatedAt": "2025-11-07T12:10:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Ford Mustang",
+    "Description": "Classic American muscle car with thrilling performance.",
+    "Category": "Luxury",
+    "RentPrice": "$140/day",
+    "Location": "Las Vegas, NV",
+    "HostedImage": "https://i.ibb.co.com/5hwCsRmj/2015-Ford-Mustang-GT-For-Sale-At-Auction-Mecum-Auctions.jpg",
+    "ProviderName": "Speedster Rentals",
+    "ProviderEmail": "fast@speedsterrentals.com",
+    "CreatedAt": "2025-11-09T07:15:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Hyundai Ioniq 5",
+    "Description": "Modern electric hatchback offering smooth and quiet rides.",
+    "Category": "Electric",
+    "RentPrice": "$100/day",
+    "Location": "Seattle, WA",
+    "HostedImage": "https://i.ibb.co.com/ch65j5n6/Hyundai-IONIQ-5-2025.jpg",
+    "ProviderName": "GreenGo Rentals",
+    "ProviderEmail": "eco@greengo.com",
+    "CreatedAt": "2025-11-06T16:40:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Mercedes-Benz C-Class",
+    "Description": "Elegant sedan that combines performance and luxury perfectly.",
+    "Category": "Luxury",
+    "RentPrice": "$170/day",
+    "Location": "San Francisco, CA",
+    "HostedImage": "https://i.ibb.co.com/4wsSCFCk/Mercedes-Benz-AMG-C-Class-Coupe.jpg",
+    "ProviderName": "LuxAuto Rentals",
+    "ProviderEmail": "rent@luxauto.com",
+    "CreatedAt": "2025-11-05T11:25:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Kia Soul",
+    "Description": "Compact hatchback with a unique design and comfortable interior.",
+    "Category": "Hatchback",
+    "RentPrice": "$55/day",
+    "Location": "Orlando, FL",
+    "HostedImage": "https://i.ibb.co.com/PGdYNqXy/Kia-Soul-SUV-Styling-Pack-2013-16.jpg",
+    "ProviderName": "BudgetRide",
+    "ProviderEmail": "contact@budgetride.com",
+    "CreatedAt": "2025-11-04T20:00:00Z",
+    "Status": "Available"
+  },
+  {
+    "CarName": "Nissan Leaf",
+    "Description": "Affordable all-electric car perfect for city commutes.",
+    "Category": "Electric",
+    "RentPrice": "$75/day",
+    "Location": "Portland, OR",
+    "HostedImage": "https://i.ibb.co.com/Z1WgySzY/2012-Nissan-Leaf.jpg",
+    "ProviderName": "EcoDrive Rentals",
+    "ProviderEmail": "info@ecodrive.com",
+    "CreatedAt": "2025-11-03T15:10:00Z",
+    "Status": "Available"
+  }
+]
