@@ -4,6 +4,8 @@ import Home from "../Home/Home";
 import Login from "../Pages/Auth/Login";
 import Register from "../Pages/Auth/Registration";
 import AllCar from "../Pages/Allcars/AllCar";
+import AddCar from "../Pages/Addcar/AddCar";
+import PrivetRoute from "./PrivetRoute";
 
 
 
@@ -30,6 +32,10 @@ export const router = createBrowserRouter([
         element:<AllCar></AllCar>,
         loader: () => fetch('http://localhost:3000/allcar')
       },
+      {
+        path:"/add-cars",
+        element:<PrivetRoute><AddCar></AddCar></PrivetRoute>
+      }
 
     ]
   },

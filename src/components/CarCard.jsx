@@ -5,13 +5,18 @@ const CarCard = ({ car }) => {
     const { _id, Status, HostedImage, ProviderName, Location, RentPrice, Category, Description, CarName } = car
     return (
         <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-            <figure className="h-55 overflow-hidden">
-                <img
-                    src={HostedImage}
-                    alt={name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                />
-            </figure>
+            <div className='relative'>
+                <figure className="h-55 overflow-hidden">
+                    <img
+                        src={HostedImage}
+                        alt={name}
+                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    />
+
+                </figure>
+                <p className=' absolute top-2 right-2 badge badge-outline badge-secondary'>{Status}</p>
+            </div>
+
             <div className="card-body">
                 <h2 className="card-title">{CarName}</h2>
                 <div className='flex justify-between items-center'>

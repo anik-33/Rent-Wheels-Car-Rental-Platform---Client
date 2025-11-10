@@ -24,13 +24,10 @@ const Navbar = () => {
     const links = <>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/'> <li>Home</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/All-Cars'> <li>Browse Cars</li></NavLink>
-        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/fw'> <li>Add Car</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/add-cars'> <li>Add Car</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qf'> <li>My Listings</li></NavLink>
         <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qwe'> <li className=''>My Bookings</li></NavLink>
-        {
-            user &&
-            <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/myprofile'><li>My Listings</li></NavLink>
-        }
+       
     </>
     return (
         <div className="navbar bg-base-100  shadow-sm">
@@ -74,10 +71,13 @@ const Navbar = () => {
                             {/* Dropdown content */}
                             <ul
                                 tabIndex={-1}
-                                className="dropdown-content menu bg-white rounded-box w-48 shadow-lg p-2 mt-2"
+                                className="dropdown-content menu bg-white rounded-box  shadow-lg p-2 mt-2"
                             >
                                 <li className='ml-2 text-lg font-bold'>
                                     {user.displayName}
+                                </li>
+                                <li className='ml-2 text-sm font-bold'>
+                                    {user.email}
                                 </li>
                                 <li>
                                     <button
