@@ -3,12 +3,12 @@ import toast, { Toaster } from 'react-hot-toast';
 import { Link, NavLink, useNavigate } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 
-
+// [#632EE3]
 
 const Navbar = () => {
 
-    const activeStyle = "text-[#632EE3] font-semibold border-b-2 border-[#632EE3]";
-    const normalStyle = "text-gray-700 hover:text-[#632EE3] transition";
+    const activeStyle = "text-lg text-pink-500 font-semibold border-b-2 border-red-500";
+    const normalStyle = "text-lg text-gray-700 hover:text-pink-500 transition";
     const nevigate = useNavigate();
     const { user, signOutUser } = use(AuthContext);
     const handlelogout = () => {
@@ -22,15 +22,18 @@ const Navbar = () => {
             })
     }
     const links = <>
-        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/'><li>Home</li></NavLink>
-        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/services'><li className=''>Add Car</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/'> <li>Home</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/bb'> <li>Browse Cars</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/fw'> <li>Add Car</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qf'> <li>My Listings</li></NavLink>
+        <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='qwe'> <li className=''>My Bookings</li></NavLink>
         {
             user &&
             <NavLink className={({ isActive }) => (isActive ? activeStyle : normalStyle)} to='/myprofile'><li>My Listings</li></NavLink>
         }
     </>
     return (
-        <div className="navbar bg-base-100 p-3 shadow-sm">
+        <div className="navbar bg-base-100  shadow-sm">
             <div><Toaster /></div>
             <div className="navbar-start">
                 <div className="dropdown">
@@ -46,7 +49,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <Link to='/'> <a className="text-2xl font-bold">RentWheels</a></Link>
+                <Link className='text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-600' to='/'> RentWheels</Link>
             </div>
 
             <div className="navbar-center hidden lg:flex">
@@ -88,13 +91,13 @@ const Navbar = () => {
                         </div>
                     </div>
                 ) : (
-                    <div className="flex gap-3">
-                        <Link to="/auth/login" className="btn">
-                            Log in
+                    <div className="flex gap-3 ">
+                        <Link to="/auth/login" className="btn text-white mt-4 rounded-full bg-linear-to-r from-pink-500 to-red-600">
+                            Log in/Sign Up
                         </Link>
-                        <Link to="/auth/registration" className="btn bg-purple-700 text-white">
+                        {/* <Link to="/auth/registration" className="btn bg-purple-700 text-white">
                             Register Now
-                        </Link>
+                        </Link> */}
                     </div>
                 )}
             </div>
