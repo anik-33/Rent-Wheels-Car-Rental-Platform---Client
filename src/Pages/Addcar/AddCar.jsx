@@ -1,11 +1,12 @@
 import React, { use } from 'react';
 import { AuthContext } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
-import { Navigate } from 'react-router';
+import { Navigate, useNavigate } from 'react-router';
 
 const AddCar = () => {
 
     const { user } = use(AuthContext)
+    const navigator = useNavigate()
 
     const handleAddCar = (e) => {
         e.preventDefault()
@@ -35,7 +36,7 @@ const AddCar = () => {
             .then(res => res.json())
             .then(data => {
                 toast.success("Successfully added!")
-                Navigate("/")
+                navigator("/All-Cars")
                 console.log(data)
             })
             .catch(err => {
