@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alice Johnson",
+    "message": "Renting a car here was super easy and convenient. The service was top-notch! Highly recommended for anyone looking for hassle-free rentals.",
+    "image": "https://randomuser.me/api/portraits/women/68.jpg",
+    "location": "New York, USA"
+  },
+  {
+    "name": "Michael Smith",
+    "message": "Amazing experience! The cars are in perfect condition, customer support was very helpful, and prices are fair.",
+    "image": "https://randomuser.me/api/portraits/men/45.jpg",
+    "location": "London, UK"
+  },
+  {
+    "name": "Sophia Lee",
+    "message": "Fast booking process and 24/7 support. I will definitely rent from here again for my next trip!",
+    "image": "https://randomuser.me/api/portraits/women/12.jpg",
+    "location": "Singapore"
+  },
+  {
+    "name": "James Brown",
+    "message": "Premium cars and excellent service. The pickup and drop-off process was smooth and efficient.",
+    "image": "https://randomuser.me/api/portraits/men/34.jpg",
+    "location": "Toronto, Canada"
+  },
+  {
+    "name": "Emma Wilson",
+    "message": "I was impressed by their quick response and well-maintained cars. Definitely a 5-star experience!",
+    "image": "https://randomuser.me/api/portraits/women/90.jpg",
+    "location": "Sydney, Australia"
+  },
+  {
+    "name": "Daniel Carter",
+    "message": "One of the best rental services I’ve used! Smooth experience from booking to returning the car.",
+    "image": "https://randomuser.me/api/portraits/men/22.jpg",
+    "location": "Dubai, UAE"
+  }
+]

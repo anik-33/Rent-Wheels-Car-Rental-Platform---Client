@@ -6,11 +6,11 @@ const AllCar = () => {
     const data = useLoaderData()
     console.log(data)
     return (
-        <div className='max-w-11/12 mx-auto'>
+        <div className='max-w-11/12 mx-auto mt-4'>
 
+            <h2 className='text-center text-4xl mt-3'>Explore Our All Cars</h2>
 
-
-            <div className="grid grid-cols-3 lg:grid-cols-4 gap-3">
+            <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
                 {data.map((car) => (
                    <CarCard key={car._id} car={car}></CarCard>
                 ))}
