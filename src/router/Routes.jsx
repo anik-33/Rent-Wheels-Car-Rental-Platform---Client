@@ -6,6 +6,8 @@ import Register from "../Pages/Auth/Registration";
 import AllCar from "../Pages/Allcars/AllCar";
 import AddCar from "../Pages/Addcar/AddCar";
 import PrivetRoute from "./PrivetRoute";
+import MyListing from "../Pages/Listing/MyListing";
+import Update from "../Pages/Upadate/Update";
 
 
 
@@ -36,6 +38,15 @@ export const router = createBrowserRouter([
       {
         path:"/add-cars",
         element:<PrivetRoute><AddCar></AddCar></PrivetRoute>
+      },
+      {
+        path:"my-listing",
+        element:(<PrivetRoute><MyListing></MyListing></PrivetRoute>)
+      },
+      {
+        path:"/update-car/:id",
+        element:(<PrivetRoute><Update></Update></PrivetRoute>),
+        loader: ({params}) => fetch(`http://localhost:3000/car/${params.id}`)
       }
 
     ]
