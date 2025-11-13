@@ -16,7 +16,7 @@ const ViewDetails = () => {
   } = car;
 
   useEffect(() => {
-    fetch(`http://localhost:3000/car/${id}`, {
+    fetch(`https://rent-wheels-server-app.vercel.app/car/${id}`, {
       headers: {
         authorization: `Bearer ${user.accessToken}`,
       },
@@ -32,7 +32,7 @@ const ViewDetails = () => {
   }, [user, id]);
 
   const handleBooking=()=>{
-    fetch(`http://localhost:3000/car/${id}`,{
+    fetch(`https://rent-wheels-server-app.vercel.app/car/${id}`,{
       method:'PATCH',
       headers:{
         'content-type':'application/json'
@@ -65,7 +65,7 @@ const ViewDetails = () => {
             }
             console.log(formData)
     
-            fetch('http://localhost:3000/car/bookings', {
+            fetch('https://rent-wheels-server-app.vercel.app/car/bookings', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

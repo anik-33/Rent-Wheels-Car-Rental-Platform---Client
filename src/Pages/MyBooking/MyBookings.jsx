@@ -11,7 +11,7 @@ const MyBookings = () => {
     useEffect(() => {
         if (!user?.email) return;
 
-        fetch(`http://localhost:3000/car/bookings?email=${user.email}`, {
+        fetch(`https://rent-wheels-server-app.vercel.app/car/bookings?email=${user.email}`, {
             headers: {
                 authorization: `Bearer ${user.accessToken}`,
             },

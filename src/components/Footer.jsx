@@ -10,13 +10,13 @@ const Footer = () => {
           {/* Logo & Website Name */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <img src="https://i.ibb.co.com/w2xxXMQ/Gemini-Generated-Image-ig3uw0ig3uw0ig3u.png"alt="Logo" className="w-20 h-20 mb-2 rounded-full" />
-            <h2 className="text-2xl font-bold">MyWebsite</h2>
+            <h2 className="text-2xl font-bold">Rent Wheels</h2>
           </div>
 
           {/* Contact Info */}
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-            <p>Email: support@mywebsite.com</p>
+            <p>Email: support@rentwhiles.com</p>
             <p>Phone: +880 123 456 789</p>
             <p>Address: 123 Main Street, Dhaka, Bangladesh</p>
           </div>
@@ -24,8 +24,8 @@ const Footer = () => {
           {/* Terms & Conditions */}
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold mb-2">Legal</h3>
-            <a href="/terms" className="block hover:text-pink-500 transition-colors">Terms & Conditions</a>
-            <a href="/privacy" className="block hover:text-pink-500 transition-colors">Privacy Policy</a>
+            <a href="/" className="block hover:text-pink-500 transition-colors">Terms & Conditions</a>
+            <a href="/" className="block hover:text-pink-500 transition-colors">Privacy Policy</a>
           </div>
 
           {/* Social Media Links */}

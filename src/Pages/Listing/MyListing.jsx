@@ -11,7 +11,7 @@ const MyListing = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:3000/my-listing?email=${user.email}`)
+        fetch(`https://rent-wheels-server-app.vercel.app/my-listing?email=${user.email}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -33,7 +33,7 @@ const MyListing = () => {
             confirmButtonText: "Yes, delete it!",
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:3000/car/${id}`, {
+                fetch(`https://rent-wheels-server-app.vercel.app/car/${id}`, {
                     method: "DELETE",
                     headers: {
                         "Content-Type": "application/json",

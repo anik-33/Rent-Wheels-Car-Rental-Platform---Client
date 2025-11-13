@@ -33,7 +33,7 @@ const Swiperr = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold  bg-opacity-50 px-4 py-2 rounded-lg">
               
-              Tesla Model 3
+              
             </h2>
           </div>
         </SwiperSlide>
@@ -42,7 +42,7 @@ const Swiperr = () => {
           <img src="https://i.ibb.co.com/5hwCsRmj/2015-Ford-Mustang-GT-For-Sale-At-Auction-Mecum-Auctions.jpg" alt="Plant 2" className="w-full h-full object-cover" />
           <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold  bg-opacity-50 px-4 py-2 rounded-lg">
-              Ford-Mustang-GT
+              
             </h2>
           </div>
         </SwiperSlide>
@@ -51,7 +51,7 @@ const Swiperr = () => {
           <img src="https://i.ibb.co.com/hx5qZ513/Honda-Civic-RS-Prototype-Debuts-In-Tokyo-With-Sharper-Looks-And-A-Manual-Gearbox-Carscoops.jpg" alt="Plant 3" className="w-full h-full object-cover" />
           <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold bg-opacity-50 px-4 py-2 rounded-lg">
-           Honda Civic RS
+           
             </h2>
           </div>
         </SwiperSlide>
@@ -60,7 +60,7 @@ const Swiperr = () => {
           <img src="https://i.ibb.co.com/4wsSCFCk/Mercedes-Benz-AMG-C-Class-Coupe.jpg" alt="Plant 4" className="w-full h-full object-cover" />
           <div className="absolute inset-0 flex items-center justify-center">
             <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-semibold  bg-opacity-50 px-4 py-2 rounded-lg">
-             Mercedes-Benz-AMG 
+           
             </h2>
           </div>
        

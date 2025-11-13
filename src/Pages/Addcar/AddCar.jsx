@@ -25,7 +25,7 @@ const AddCar = () => {
         }
         console.log(formData)
 
-        fetch('http://localhost:3000/allcar', {
+        fetch('https://rent-wheels-server-app.vercel.app/allcar', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

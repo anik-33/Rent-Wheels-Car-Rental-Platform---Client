@@ -16,7 +16,7 @@ const LatestCar = ({ carData }) => {
         console.log(search_text)
         setLoading(true)
 
-        fetch(`http://localhost:3000/search?search=${search_text}`)
+        fetch(`https://rent-wheels-server-app.vercel.app/search?search=${search_text}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
