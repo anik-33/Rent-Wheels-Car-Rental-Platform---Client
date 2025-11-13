@@ -6,10 +6,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Typewriter } from 'react-simple-typewriter'
+import { motion } from "framer-motion";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const Swiperr = () => {
     return (
-       <div className="w-full h-[48vh] md:h-[60vh] lg:h-[70vh]">
+       <div data-aos="zoom-in-up" className="w-full h-[48vh] md:h-[60vh] lg:h-[70vh]">
         
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -60,7 +63,11 @@ const Swiperr = () => {
              Mercedes-Benz-AMG 
             </h2>
           </div>
+       
         </SwiperSlide>
+
+          
+        <button className="mt-6 px-6 py-3 bg-gradient-to-r from-pink-600 to-red-500 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform">  Explore Now</button>
       </Swiper>
     </div>
     );

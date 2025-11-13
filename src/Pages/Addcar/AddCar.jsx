@@ -68,6 +68,7 @@ const AddCar = () => {
                         <input
                             type="number"
                             name="Price"
+                            defaultValue={"$0/day"}
                             required
                             className="input w-full rounded-full focus:border-0 focus:outline-gray-200"
                             placeholder="Enter Price"

@@ -5,12 +5,16 @@ import CarCard from '../components/CarCard';
 import WhyOus from '../components/WhyOus';
 import Testimonials from '../components/Testimonials';
 import LatestCar from '../components/LatestCar';
+import TestSwiper from '../components/TestSwiper';
+import HeroSlider from '../components/TestSwiper';
 const Home = () => {
     const carData = useLoaderData()
 
     return (
         <div className=''>
             <Swiperr></Swiperr>
+
+            
                 {/* featured latest cars */}
            <LatestCar carData={carData}></LatestCar>
             

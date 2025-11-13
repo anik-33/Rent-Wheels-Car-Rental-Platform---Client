@@ -7,7 +7,7 @@ const MyListing = () => {
     const { user } = use(AuthContext)
     const [cars, setCars] = useState([])
     const [loading, setLoading] = useState(true)
-   
+
 
     useEffect(() => {
 
@@ -42,19 +42,19 @@ const MyListing = () => {
                     .then((res) => res.json())
                     .then((data) => {
                         console.log(data);
-                        if(data.result.deletedCount > 0){
+                        if (data.result.deletedCount > 0) {
                             setCars(prev => prev.filter(car => car._id !== id));
-                             
+
                             Swal.fire({
-                            title: "Deleted!",
-                            text: "Your file has been deleted.",
-                            icon: "success",
-                        });
-                        } else{
+                                title: "Deleted!",
+                                text: "Your file has been deleted.",
+                                icon: "success",
+                            });
+                        } else {
                             Swal.fire("Error!", "Failed to delete car.", "error");
                         }
 
-                       
+
                     })
                     .catch((err) => {
                         console.log(err);
@@ -70,7 +70,7 @@ const MyListing = () => {
 
 
     return (
-        <div className='max-w-11/12 mx-auto'>
+        <div className='max-w-11/12 mx-auto min-h-screen'>
 
             <div className="overflow-x-auto">
                 <table className="table">
@@ -82,6 +82,7 @@ const MyListing = () => {
                             <th>Rent Price</th>
                             <th>Status</th>
                             <th>Action</th>
+                            <th>Details</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -110,10 +111,18 @@ const MyListing = () => {
                                         {/* <span className="badge badge-ghost badge-sm">Desktop Support Technician</span> */}
                                     </td>
                                     <td>${car.RentPrice}</td>
-                                    <td>{car.Status}</td>
+                                    <td className=' className={`absolute top-6 right-6 px-4 py-2 text-sm font-semibold rounded-full ${
+                                                        Status === "Available"
+                                                      ? "bg-green-500/90 text-white"
+                                                : "bg-red-500/90 text-white"
+                                                    }`}'>{car.Status}</td>
                                     <td>
                                         <Link to={`/update-car/${car._id}`}><button className="btn btn-ghost btn-xs">Update</button></Link>
                                         <button onClick={() => handleDlete(car._id)} className="btn btn-warning btn-xs">Dellet</button>
+                                    </td>
+                                    <td>
+                                        <Link to={`/details/${car._id}`}><button className="btn btn-ghost btn-xs">Details</button></Link>
+
                                     </td>
 
                                 </tr>

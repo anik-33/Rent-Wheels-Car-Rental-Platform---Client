@@ -8,6 +8,9 @@ import AddCar from "../Pages/Addcar/AddCar";
 import PrivetRoute from "./PrivetRoute";
 import MyListing from "../Pages/Listing/MyListing";
 import Update from "../Pages/Upadate/Update";
+import ViewDetails from "../Pages/ViewDetails/ViewDetails";
+import ErrorPage from "../components/ErrorPage";
+import MyBookings from "../Pages/MyBooking/MyBookings";
 
 
 
@@ -15,6 +18,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <MainlayOut></MainlayOut>,
+    errorElement:<ErrorPage></ErrorPage> ,
     children: [
       {
         path: "/",
@@ -28,12 +32,17 @@ export const router = createBrowserRouter([
       },
       {
         path:"/auth/registration",
-        element:<Register></Register>
+        element:<Register></Register>,
+        
       },
       {
         path:"/All-Cars",
         element:<AllCar></AllCar>,
         loader: () => fetch('http://localhost:3000/allcar')
+      },
+      {
+        path:"/details/:id",
+        element:<PrivetRoute><ViewDetails></ViewDetails></PrivetRoute>
       },
       {
         path:"/add-cars",
@@ -42,6 +51,11 @@ export const router = createBrowserRouter([
       {
         path:"my-listing",
         element:(<PrivetRoute><MyListing></MyListing></PrivetRoute>)
+      },
+      {
+        path:"/mybooking",
+        element:<MyBookings></MyBookings>,
+
       },
       {
         path:"/update-car/:id",

@@ -14,7 +14,9 @@ const CarCard = ({ car }) => {
                     />
 
                 </figure>
-                <p className=' absolute top-2 right-2 badge badge-outline badge-secondary'>{Status}</p>
+                <p className={` absolute top-2 right-2  
+                    ${Status=== "Available" ? "badge badge-success" : "badge badge-warning" }
+                    `}>{Status}</p>
             </div>
 
             <div className="card-body">
@@ -22,10 +24,11 @@ const CarCard = ({ car }) => {
                 <div className='flex justify-between items-center'>
                     <div>
                         <div className="badge text-xs badge-xs badge-secondary rounded-full">{Category}</div>
-                        <div className="text-xs text-secondary mt-0.5">{ProviderName}</div>
+
+                        <div className="text-xs  mt-0.5">Provider: <span className='text-secondary'>{ProviderName}</span></div>
                     </div>
                     <div>
-                        <p className='font-bold'> {RentPrice}</p>
+                        <p className='font-bold'>${RentPrice}/day</p>
                     </div>
                 </div>
                 <p className="line-clamp-1">
@@ -34,7 +37,7 @@ const CarCard = ({ car }) => {
                 {/* <p className="text-sm text-base-content/70">by {author}</p> */}
                 <div className="card-actions justify-between items-center mt-1">
 
-                    <Link to={`/model-details/${_id}`} className="btn rounded-full bg-linear-to-r from-pink-500 to-red-600 hover:from-red-600 hover:to-pink-500 text-white w-full btn-sm">Click For Details</Link>
+                    <Link to={`/details/${_id}`} className="btn rounded-full bg-linear-to-r from-purple-500 to-purple-700 hover:from-red-600 hover:to-purple-500 text-white w-full btn-sm">Click For Details</Link>
                 </div>
             </div>
         </div>

@@ -17,6 +17,7 @@ const Register = () => {
     const photoURL = event.target.photoURL.value;
     const email = event.target.email.value;
     const password = event.target.password.value;
+    // here i'll implement save user data to db
 
     toast.loading("Creating user...", { id: "create-user" });
 
@@ -47,7 +48,7 @@ const Register = () => {
   };
 
   return (
-    <div className="card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+    <div className="mt-5 card bg-base-100 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
         <h1 className="text-3xl font-bold text-center">Register</h1>
         <form onSubmit={handleRegister}>

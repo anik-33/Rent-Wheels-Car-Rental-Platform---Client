@@ -64,7 +64,7 @@ const WhyOus = () => {
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: false }}
                             >
                                 <div className="text-5xl mb-4">{item.icon}</div>
                                 <h3 className="text-xl font-semibold mb-2 text-gray-800">
