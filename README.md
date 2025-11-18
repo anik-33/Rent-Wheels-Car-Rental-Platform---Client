@@ -140,8 +140,9 @@ client/
 
 server/
   index.js
-  routes/
-  controllers/
+  package.json
+  vercel.json
+  
 ```
 
 ---
@@ -183,13 +184,6 @@ node index.js
 ```
 
 ---
-
-## 📸 Screenshots (optional)
-Add screenshot links here:
-```
-![Home Page](your-image-link)
-![Car Details](your-image-link)
-```
 
 ---
 
