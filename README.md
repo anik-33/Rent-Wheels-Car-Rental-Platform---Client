@@ -1,16 +1,200 @@
-# React + Vite
+# 🚗 RentWheels – Car Rental Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🔗 Live Links
+- **Client Live URL:**  
+- **Server Live URL:**  
+- **Client GitHub Repo:**  
+- **Server GitHub Repo:**  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📘 About the Project
+RentWheels is a MERN-based car rental platform where users can browse, view, and book cars, while providers can list and manage vehicles.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+### 👤 User Features
+- Browse all available cars  
+- View detailed car information  
+- Book cars  
+- Manage personal bookings  
+- Login/Register with Firebase Auth  
+- Google Login Support  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🚘 Provider Features
+- Add new cars  
+- Update car details  
+- Delete cars  
+- Manage own car listings  
+- Prevent double booking  
+- Car availability status  
+
+### 🎨 UI & UX Features
+- Modern responsive UI  
+- Hero slider & featured sections  
+- Extra sections (Top Rated, Testimonials)  
+- Framer Motion animations  
+- Typewriter effect  
+- Custom 404 page  
+
+---
+
+## 🧰 Tech Stack
+
+### **Frontend**
+- React.js  
+- React Router  
+- Tailwind CSS / DaisyUI  
+- Firebase Authentication  
+- Axios  
+- Framer Motion  
+- React Simple Typewriter  
+- SweetAlert2 / Toast  
+
+### **Backend**
+- Node.js  
+- Express.js  
+- MongoDB  
+- CORS  
+- Dotenv  
+- Hosted on Vercel  
+
+---
+
+## 📄 Core Pages
+
+### 🏠 Home Page
+- Hero Slider  
+- Featured Cars  
+- Why Rent With Us  
+- Extra Sections  
+- Search by car name  
+
+### 🚗 Browse Cars
+View all cars added by all users
+
+### 📄 Car Details (Private)
+- Complete information  
+- Provider details  
+- Book Now button  
+- Status: Available / Unavailable  
+
+### ➕ Add Car (Private)
+- Submit car form  
+- Auto-filled provider info  
+
+### 📋 My Listings (Private)
+- Shows user-added cars  
+- Update / Delete options  
+
+### 📦 My Bookings (Private)
+Shows all booked cars
+
+### 🔐 Login & Register
+- Email/Password auth  
+- Google login  
+- Password validation  
+
+### ❌ 404 Page
+- Custom error page  
+- No navbar/footer  
+
+---
+
+## 🔐 Authentication
+- Firebase Authentication  
+- Protected routes  
+- Persistent login  
+- Password validation rules  
+- SweetAlert/Toast for feedback  
+
+---
+
+## 🔄 CRUD Operations
+- **Create:** Add new car  
+- **Read:** Browse / filter cars  
+- **Update:** Modify existing cars  
+- **Delete:** Remove cars with confirmation  
+
+---
+
+## 🧪 Challenge Features
+- Prevent double booking  
+- Real-time availability updates  
+- Badges for car status  
+- Search functionality  
+
+---
+
+## 📁 Folder Structure
+```
+client/
+  src/
+    components/
+    pages/
+    routes/
+    hooks/
+    firebase/
+
+server/
+  index.js
+  routes/
+  controllers/
+```
+
+---
+
+## ⚙️ Environment Variables
+
+### **Client (.env)**
+```
+VITE_apiKey=
+VITE_authDomain=
+VITE_projectId=
+VITE_storageBucket=
+VITE_messagingSenderId=
+VITE_appId=
+```
+
+### **Server (.env)**
+```
+MONGO_URI=
+PORT=5000
+```
+
+---
+
+## 🚀 How to Run Locally
+
+### **Client**
+```
+cd client
+npm install
+npm run dev
+```
+
+### **Server**
+```
+cd server
+npm install
+node index.js
+```
+
+---
+
+## 📸 Screenshots (optional)
+Add screenshot links here:
+```
+![Home Page](your-image-link)
+![Car Details](your-image-link)
+```
+
+---
+
+## 👨‍💻 Author
+**Anik – MERN Stack Developer**
+
+---
+
